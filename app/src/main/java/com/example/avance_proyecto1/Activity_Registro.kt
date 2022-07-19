@@ -8,6 +8,7 @@ import android.widget.Toast
 import com.example.avance_proyecto1.databinding.ActivityRegistroBinding
 import com.example.avance_proyecto1.db.DbHelper
 import com.example.avance_proyecto1.db.DbRegistro
+import com.example.avance_proyecto1.tab.Activity_Generation
 
 
 class Activity_Registro : AppCompatActivity() {
@@ -29,7 +30,12 @@ class Activity_Registro : AppCompatActivity() {
         val db =  dbhelper.writableDatabase;
 
         if (db != null){
-            Toast.makeText(this,"BASE DE DATOS CREADA", Toast.LENGTH_SHORT).show();
+            val dbRegistro = DbRegistro(this);
+            val valdiar = dbRegistro.validarRegistro()
+            if (valdiar > 0){
+                val i = Intent(this, Activity_Generation::class.java)
+                startActivity(i)
+            }
         }else{
             Toast.makeText(this,"BASE DE DATOS ERROR", Toast.LENGTH_SHORT).show();
         }

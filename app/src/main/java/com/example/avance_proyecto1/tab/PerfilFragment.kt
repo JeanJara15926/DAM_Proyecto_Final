@@ -6,10 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.avance_proyecto1.Activity_Registro
 import com.example.avance_proyecto1.R
+import com.example.avance_proyecto1.db.DbRegistro
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_perfil.*
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,6 +47,42 @@ class PerfilFragment : Fragment() {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_perfil, container, false)
         val button = root.findViewById<Button>(R.id.btnEditar);
+        val img = root.findViewById<ImageView>(R.id.img_imc);
+        val textView = root.findViewById<TextView>(R.id.tv_imc);
+        val textViewtxt = root.findViewById<TextView>(R.id.tv_imc_txt);
+        val textViewfcm = root.findViewById<TextView>(R.id.img_fcm);
+        val dbRegistro = DbRegistro(context);
+
+        val imc = dbRegistro.imc
+        val fcm = dbRegistro.fcm
+        textViewfcm.text = ("Frecuencia Cardiaca Maxima: "+ fcm).substring(0,34);
+
+        textView.text = ("Tu IMC es: "+ imc).substring(0,15);
+        //colocar img según imc
+        if(imc <= 18.5){
+            val id = resources.getIdentifier("grafico_peso_bajo", "drawable", context?.packageName)
+            textViewtxt.text = "Peso Bajo"
+            img.setImageResource(id)
+        }else if(imc > 18.5 || imc <= 24.9){
+            val id = resources.getIdentifier("grafico_normal", "drawable", context?.packageName)
+            textViewtxt.text = "Peso Normal"
+            img.setImageResource(id)
+        }else if (imc > 24.9 || imc < 29.9){
+            val id = resources.getIdentifier("grafico_exceso_peso", "drawable", context?.packageName)
+            textViewtxt.text = "Exceso de Peso"
+            img.setImageResource(id)
+        }else if (imc > 29.9 || imc < 34.9){
+            val id = resources.getIdentifier("grafico_obeso", "drawable", context?.packageName)
+            textViewtxt.text = "Obeso"
+            img.setImageResource(id)
+        }
+        else if (imc > 34.9){
+            val id = resources.getIdentifier("grafico_extrem_obeso", "drawable", context?.packageName)
+            textViewtxt.text = "Extremadamente Obeso"
+            img.setImageResource(id)
+        }
+
+
         button.setOnClickListener {
             val i = Intent(context, Activity_Registro::class.java)
             startActivity(i)
