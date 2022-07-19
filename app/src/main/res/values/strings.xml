@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">avance_proyecto1</string>
+    <string name="mi_edad_es">Mi Edad Es:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
