@@ -85,6 +85,9 @@ class PerfilFragment : Fragment() {
 
         button.setOnClickListener {
             val i = Intent(context, Activity_Registro::class.java)
+            val bundle = Bundle()
+            bundle.putBoolean("actualiarRegistro", true);
+            i.putExtras(bundle);
             startActivity(i)
             //Toast.makeText(context, "CLICK",Toast.LENGTH_SHORT).show();
         }

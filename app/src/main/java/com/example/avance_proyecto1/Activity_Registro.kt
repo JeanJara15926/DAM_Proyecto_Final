@@ -14,7 +14,7 @@ import com.example.avance_proyecto1.tab.Activity_Generation
 class Activity_Registro : AppCompatActivity() {
 
     private lateinit var binding: ActivityRegistroBinding
-
+    var actualizarRegistro = false;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegistroBinding.inflate(layoutInflater)
@@ -26,13 +26,15 @@ class Activity_Registro : AppCompatActivity() {
         binding.checkBoxMujer.setOnClickListener {
            binding.checkBoxHombre.isChecked = false;
         }
+        actualizarRegistro = intent.getBooleanExtra("actualiarRegistro", false);
+
         val dbhelper = DbHelper(this);
         val db =  dbhelper.writableDatabase;
 
         if (db != null){
             val dbRegistro = DbRegistro(this);
             val valdiar = dbRegistro.validarRegistro()
-            if (valdiar > 0){
+            if (valdiar > 0 && !actualizarRegistro){
                 val i = Intent(this, Activity_Generation::class.java)
                 startActivity(i)
             }
