@@ -51,10 +51,13 @@ public class DbHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL("CREATE TABLE " + TABLA_DATO_DIETA + "(" +
                 "n_id_dato_dieta INTEGER PRIMARY KEY AUTOINCREMENT," +
-                "n_id_dieta INTEGER NOT NULL," +
-                "c_hidratog TEXT NOT NULL," +
-                "c_proteinasg TEXT NOT NULL," +
-                "c_grasasg TEXT NOT NULL)"
+                "c_nombreg TEXT NOT NULL," +
+                "c_hidratog REAL NOT NULL," +
+                "c_proteinasg REAL NOT NULL," +
+                "c_grasasg REAL NOT NULL," +
+                "c_hidratog1 REAL NOT NULL," +
+                "c_proteinasg1 REAL NOT NULL," +
+                "c_grasasg1 REAL NOT NULL)"
         );
 
         sqLiteDatabase.execSQL("INSERT INTO "+TABLA_DIETA+" (c_nombre, c_fruta, c_lacteos, c_proteinas, c_verduras, c_frutos_cereales) " +

@@ -17,6 +17,7 @@ class ObjetivoActivity : AppCompatActivity() {
     var nivelAct = 0;
 
     val dbRegistro = DbRegistro(this);
+    val dbRegistro1 = DbRegistro(this);
     var kcal = 0.0;
     var nivel = 0.0;
 
@@ -65,6 +66,7 @@ class ObjetivoActivity : AppCompatActivity() {
     }
 
     private fun insertar(){
+        val kcals = dbRegistro1.insertDatosCal(kcal)
         val items = dbRegistro.insertRegistro(edad, sexo,talla, peso, kcal)
         if (items > 0 ){
             val i = Intent(this,Activity_Generation::class.java)
