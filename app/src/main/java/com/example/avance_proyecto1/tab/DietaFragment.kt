@@ -1,10 +1,15 @@
 package com.example.avance_proyecto1.tab
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.Toast
+import com.example.avance_proyecto1.Activity_Registro
+import com.example.avance_proyecto1.OpcionDieta
 import com.example.avance_proyecto1.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -34,8 +39,47 @@ class DietaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dieta, container, false)
+
+        val root = inflater.inflate(R.layout.fragment_dieta, container, false)
+        val button1 = root.findViewById<Button>(R.id.button2);
+        val button2 = root.findViewById<Button>(R.id.button3);
+        val button3 = root.findViewById<Button>(R.id.button4);
+        val button4 = root.findViewById<Button>(R.id.button);
+
+        button1.setOnClickListener {
+            val i = Intent(context, OpcionDieta::class.java)
+            val bundle = Bundle()
+            bundle.putString("nombre", "MEDITERRANEA");
+            i.putExtras(bundle);
+            startActivity(i)
+            Toast.makeText(context, "Has seleccionado dieta Mediterranea", Toast.LENGTH_SHORT).show();
+        }
+        button2.setOnClickListener {
+            val i = Intent(context, OpcionDieta::class.java)
+            val bundle = Bundle()
+            bundle.putString("nombre", "EQUILIBRADA");
+            i.putExtras(bundle);
+            startActivity(i)
+            Toast.makeText(context, "Has seleccionado dieta Equilibrada", Toast.LENGTH_SHORT).show();
+        }
+        button3.setOnClickListener {
+            val i = Intent(context, OpcionDieta::class.java)
+            val bundle = Bundle()
+            bundle.putString("nombre", "PROTEINAS");
+            i.putExtras(bundle);
+            startActivity(i)
+            Toast.makeText(context, "Has seleccionado dieta alto en Proteina", Toast.LENGTH_SHORT).show();
+        }
+        button4.setOnClickListener {
+            val i = Intent(context, OpcionDieta::class.java)
+            val bundle = Bundle()
+            bundle.putString("nombre", "GRASAS");
+            i.putExtras(bundle);
+            startActivity(i)
+            Toast.makeText(context, "Has seleccionado dieta alto en Grasa", Toast.LENGTH_SHORT).show();
+        }
+
+        return root
     }
 
     companion object {
