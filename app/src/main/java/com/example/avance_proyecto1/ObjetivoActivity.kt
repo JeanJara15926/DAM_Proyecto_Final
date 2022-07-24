@@ -71,6 +71,7 @@ class ObjetivoActivity : AppCompatActivity() {
         if (items > 0 ){
             val i = Intent(this,Activity_Generation::class.java)
             startActivity(i)
+            //hola
         }
     }
 }
