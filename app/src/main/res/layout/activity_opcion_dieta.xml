@@ -9,6 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_margin="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -64,6 +65,7 @@
                     android:id="@+id/textView21"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="KCAL"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -81,6 +83,7 @@
                     android:id="@+id/textView22"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Gramos"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -115,6 +118,7 @@
                     android:id="@+id/textView23"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="KCAL"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -132,6 +136,7 @@
                     android:id="@+id/textView24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Gramos"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -166,6 +171,7 @@
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="KCAL"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -183,6 +189,7 @@
                     android:id="@+id/textView26"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="Gramos"
                     android:textColor="#DF090404"
                     android:textColorHint="#372222"
@@ -211,9 +218,15 @@
         <TextView
             android:id="@+id/textd"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="TextView"
             android:textColor="#131212"
             android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="TextView" />
     </LinearLayout>
 </FrameLayout>
