@@ -14,17 +14,9 @@
             android:layout_width="76dp"
             android:layout_height="93dp"
             android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="8dp"
             android:src="@drawable/login"/>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sesion Iniciada"
-            android:textColor="@color/purple_500"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:layout_gravity="center"/>
 
         <Button
             android:id="@+id/btnEditar"
@@ -33,14 +25,18 @@
             android:layout_gravity="center"
             android:layout_marginStart="24dp"
             android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/principal"
             android:text="Editar Perfil" />
 
-        <EditText
+        <View
             android:layout_width="match_parent"
-            android:layout_height="22dp"
-            android:backgroundTint="@color/black"
+            android:layout_height="2dp"
             android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"/>
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black"/>
+
         <TextView
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
@@ -49,17 +45,20 @@
             android:textColor="@color/black"
             android:textSize="40sp"
             android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:layout_gravity="center"/>
 
         <TextView
             android:id="@+id/tv_imc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"/>
 
         <TextView
             android:id="@+id/tv_imc_txt"
@@ -76,17 +75,18 @@
             android:layout_width="wrap_content"
             android:layout_height="168dp"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="18dp"
             />
 
         <TextView
             android:id="@+id/img_fcm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/txtprincipal"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:layout_marginBottom="12dp"
             android:layout_gravity="center"/>
 
     </LinearLayout>

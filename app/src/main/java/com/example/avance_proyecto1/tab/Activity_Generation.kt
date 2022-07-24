@@ -65,7 +65,7 @@ class Activity_Generation : AppCompatActivity(), View.OnClickListener {
             indicatorViews[currentIndicator].setBackgroundColor(Color.TRANSPARENT)
             //titleViews[currentIndicator].inputType = Typeface.NORMAL
         }
-        indicatorViews[fragmentId].setBackgroundColor(Color.parseColor("#ffeb3b"))
+        indicatorViews[fragmentId].setBackgroundColor(Color.parseColor("#5ECEF9"))
         //titleViews[fragmentId].inputType = Typeface.BOLD
         currentIndicator = fragmentId
     }
