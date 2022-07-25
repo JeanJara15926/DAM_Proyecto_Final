@@ -26,14 +26,31 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1/16"
+            android:text="1/4"
             android:textColor="#080BBC"
             android:textSize="25sp"
             android:textStyle="bold" />
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="432dp"
-            android:src="@drawable/gymnasio" />
+        <Button
+            android:id="@+id/btnrutina1"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/rutina1"/>
+        <Button
+            android:id="@+id/btnrutina2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/rutina2"/>
+        <Button
+            android:id="@+id/btnrutina3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/rutina3"/>
+        <Button
+            android:id="@+id/btnrutina4"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:background="@drawable/rutina4"/>
+
     </LinearLayout>
 
 </FrameLayout>

@@ -38,6 +38,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="RUTINA DE EJERCICIOS"
+                        android:layout_marginLeft="12dp"
                         android:textColor="@color/white"
                         android:textSize="18dp">
                     </TextView>
@@ -61,69 +62,28 @@
                 android:layout_weight="1"
                 android:layout_margin="15dp">
 
-
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="189dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/rutina" />
-
+                    android:src="@drawable/cuatro" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="25dp"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Press de banca">
+                        android:text="Jumping Jacks">
 
                     </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Set: 3">
 
-                    </TextView>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reps:12-15">
-
-                    </TextView>
-                </LinearLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_margin="15dp">
-                <pl.droidsonroids.gif.GifImageView
-                    android:layout_width="189dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/uno" />
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginTop="25dp"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Press de banca\n inclinada">
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Set: 3">
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reps:12-15">
+                        android:text="30 segundos">
 
                     </TextView>
                 </LinearLayout>
@@ -137,8 +97,7 @@
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="189dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/dos" />
-
+                    android:src="@drawable/cinco" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -149,19 +108,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Apertura de\n  maquina">
+                        android:text="Sentadillas en Pared">
 
                     </TextView>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Set: 3">
-
-                    </TextView>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Reps:12">
+                        android:text="30 segundos">
 
                     </TextView>
                 </LinearLayout>
@@ -175,31 +129,62 @@
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="189dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/tres" />
+                    android:src="@drawable/seis" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:layout_marginTop="25dp"
                     android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Curl alterno">
+                        android:text="Flexiones">
 
                     </TextView>
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Set: 3">
+                        android:text="30 segundos">
 
                     </TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="15dp">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="189dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/siete" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reps:12">
+                        android:text="Zancadas">
 
                     </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 segundos">
+
+                    </TextView>
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -207,4 +192,3 @@
     </LinearLayout>
 
 </LinearLayout>
-

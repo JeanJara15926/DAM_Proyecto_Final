@@ -1,11 +1,14 @@
 package com.example.avance_proyecto1.tab
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.avance_proyecto1.R
+import android.widget.Button
+import android.widget.ImageView
+import com.example.avance_proyecto1.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,7 +38,31 @@ class PrincipalFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_principal, container, false)
+        val root = inflater.inflate(R.layout.fragment_principal, container, false)
+
+        val rutina1 = root.findViewById<Button>(R.id.btnrutina1);
+        rutina1.setOnClickListener{
+            val intent = Intent(context, RutinasActivity::class.java)
+            startActivity(intent)
+        }
+        val rutina2 = root.findViewById<Button>(R.id.btnrutina2);
+        rutina2.setOnClickListener{
+            val intent = Intent(context, RutinasActivity1::class.java)
+            startActivity(intent)
+        }
+        val rutina3 = root.findViewById<Button>(R.id.btnrutina3);
+        rutina3.setOnClickListener{
+            val intent = Intent(context, RutinasActivity2::class.java)
+            startActivity(intent)}
+        val rutina4 = root.findViewById<Button>(R.id.btnrutina4);
+        rutina4.setOnClickListener{
+            val intent = Intent(context, RutinasActivity3::class.java)
+            startActivity(intent)
+        }
+
+        return root
+
+
     }
 
     companion object {

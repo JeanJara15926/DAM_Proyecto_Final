@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".RutinasActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".RutinasActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".RutinasActivity1"
+            android:exported="false" />
+        <activity
             android:name=".ObjetivoActivity"
             android:exported="false" />
         <activity
@@ -20,7 +29,7 @@
             android:exported="false" />
         <activity
             android:name=".tab.Activity_Generation"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Activity_Select_Rutine"
             android:exported="false" />
