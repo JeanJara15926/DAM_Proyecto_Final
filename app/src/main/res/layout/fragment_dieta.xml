@@ -15,6 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="6dp"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -30,6 +31,7 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Mediterraneo" />
         </LinearLayout>
 
@@ -37,6 +39,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:layout_marginTop="6dp"
             android:orientation="vertical">
 
             <Button
@@ -51,6 +54,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Equilibrado" />
         </LinearLayout>
 
@@ -58,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:layout_marginTop="6dp"
             android:orientation="vertical">
 
             <Button
@@ -72,6 +77,7 @@
                 android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="Alto en proteinas" />
         </LinearLayout>
 
@@ -79,6 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
             android:orientation="vertical">
 
             <Button
@@ -95,6 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textStyle="bold"
                 android:text="Alto en grasas" />
         </LinearLayout>
 
