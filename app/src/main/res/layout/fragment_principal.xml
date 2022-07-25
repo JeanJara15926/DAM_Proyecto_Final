@@ -22,33 +22,29 @@
             android:textSize="35sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1/4"
-            android:textColor="#080BBC"
-            android:textSize="25sp"
-            android:textStyle="bold" />
         <Button
             android:id="@+id/btnrutina1"
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
             android:background="@drawable/rutina1"/>
         <Button
             android:id="@+id/btnrutina2"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
+            android:layout_marginTop="6dp"
             android:background="@drawable/rutina2"/>
         <Button
             android:id="@+id/btnrutina3"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="8dp"
             android:background="@drawable/rutina3"/>
         <Button
             android:id="@+id/btnrutina4"
-            android:layout_width="wrap_content"
-            android:layout_height="140dp"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/rutina4"/>
 
     </LinearLayout>

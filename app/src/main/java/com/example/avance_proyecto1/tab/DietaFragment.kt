@@ -52,7 +52,6 @@ class DietaFragment : Fragment() {
             bundle.putString("nombre", "MEDITERRANEA");
             i.putExtras(bundle);
             startActivity(i)
-            Toast.makeText(context, "Has seleccionado dieta Mediterranea", Toast.LENGTH_SHORT).show();
         }
         button2.setOnClickListener {
             val i = Intent(context, OpcionDieta::class.java)
@@ -60,7 +59,7 @@ class DietaFragment : Fragment() {
             bundle.putString("nombre", "EQUILIBRADA");
             i.putExtras(bundle);
             startActivity(i)
-            Toast.makeText(context, "Has seleccionado dieta Equilibrada", Toast.LENGTH_SHORT).show();
+
         }
         button3.setOnClickListener {
             val i = Intent(context, OpcionDieta::class.java)
@@ -68,7 +67,7 @@ class DietaFragment : Fragment() {
             bundle.putString("nombre", "PROTEINAS");
             i.putExtras(bundle);
             startActivity(i)
-            Toast.makeText(context, "Has seleccionado dieta alto en Proteina", Toast.LENGTH_SHORT).show();
+
         }
         button4.setOnClickListener {
             val i = Intent(context, OpcionDieta::class.java)
@@ -76,7 +75,7 @@ class DietaFragment : Fragment() {
             bundle.putString("nombre", "GRASAS");
             i.putExtras(bundle);
             startActivity(i)
-            Toast.makeText(context, "Has seleccionado dieta alto en Grasa", Toast.LENGTH_SHORT).show();
+
         }
 
         return root
