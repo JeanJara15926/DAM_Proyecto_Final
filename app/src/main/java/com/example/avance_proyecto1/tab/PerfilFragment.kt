@@ -63,15 +63,15 @@ class PerfilFragment : Fragment() {
             val id = resources.getIdentifier("grafico_peso_bajo", "drawable", context?.packageName)
             textViewtxt.text = "Peso Bajo"
             img.setImageResource(id)
-        }else if(imc > 18.5 || imc <= 24.9){
+        }else if(imc > 18.5 && imc <= 24.9){
             val id = resources.getIdentifier("grafico_normal", "drawable", context?.packageName)
             textViewtxt.text = "Peso Normal"
             img.setImageResource(id)
-        }else if (imc > 24.9 || imc < 29.9){
+        }else if (imc > 24.9 && imc < 29.9){
             val id = resources.getIdentifier("grafico_exceso_peso", "drawable", context?.packageName)
             textViewtxt.text = "Exceso de Peso"
             img.setImageResource(id)
-        }else if (imc > 29.9 || imc < 34.9){
+        }else if (imc > 29.9 && imc < 34.9){
             val id = resources.getIdentifier("grafico_obeso", "drawable", context?.packageName)
             textViewtxt.text = "Obeso"
             img.setImageResource(id)
