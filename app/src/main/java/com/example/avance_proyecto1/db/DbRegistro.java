@@ -7,6 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 
 import androidx.annotation.Nullable;
 
+import java.lang.annotation.Documented;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -229,6 +230,40 @@ public class DbRegistro extends DbHelper{
             e.toString();
         }
         return id;
+    }
+
+
+    public ArrayList<Double> ObtenerDieta(String nombre){
+        ArrayList<Double> miArreglo = new ArrayList<Double>();
+          Cursor rows = null;
+        try {
+            DbHelper ddbHelper = new DbHelper(context);
+            SQLiteDatabase db = ddbHelper.getWritableDatabase();
+            rows =  db.rawQuery("SELECT * FROM " + TABLA_DATO_DIETA +" WHERE c_nombreg='"+ nombre+"'", null);
+
+            if(rows != null){
+                rows.moveToFirst();
+                do{
+                    Double h1 = rows.getDouble(2);
+                    Double p1 = rows.getDouble(3);
+                    Double g1 = rows.getDouble(4);
+                    Double h2 = rows.getDouble(5);
+                    Double p2 = rows.getDouble(6);
+                    Double g2 = rows.getDouble(7);
+                    miArreglo.add(h1);
+                    miArreglo.add(p1);
+                    miArreglo.add(g1);
+                    miArreglo.add(h2);
+                    miArreglo.add(p2);
+                    miArreglo.add(g2);
+                }while(rows.moveToNext());
+            }
+            rows.close();
+
+        }catch (Exception e){
+            e.toString();
+        }
+        return miArreglo;
     }
 
 
